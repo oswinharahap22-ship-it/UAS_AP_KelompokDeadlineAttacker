@@ -12,6 +12,8 @@ Anggota:
 
 (-) Admaja janias Nadhif lahagu (251401090)
 
+Link Youtube ada didalam ini: https://drive.google.com/drive/folders/1pcm6UOhaAvGZxGe1crccV2a2O4vqw8Wd?usp=sharing
+
 # Nomor 1 Parkir Mall
 
 Program ini adalah sebuah aplikasi berbasis CLI (command-line interface) yang ditulis menggunakan bahasa pemrograman C++. Aplikasi ini dirancang untuk mensimulasikan sistem manajemen dan transaksi di sebuah pintu portal parkir khusus mobil secara real-time.
@@ -353,6 +355,3 @@ Digunakan untuk berinteraksi dengan pengguna.
 
 
 Screenshot: https://drive.google.com/file/d/1K4291uycbpo_Mn8f9r29NdeBzADepl34/view?usp=sharing
-
-
-Link Youtube ada didalam ini: https://drive.google.com/drive/folders/1pcm6UOhaAvGZxGe1crccV2a2O4vqw8Wd?usp=sharing
