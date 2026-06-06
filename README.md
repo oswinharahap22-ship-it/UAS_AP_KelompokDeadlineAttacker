@@ -156,5 +156,23 @@ Di akhir eksekusi, program menampilkan pesan penutup "Game Selesai ;)" sebagai t
 
 ## Konsep Pemrograman yang Digunakan
 1. Array
+
 Digunakan untuk menyimpan kumpulan nama negara.
+
 string negaraASEAN[11]
+
+2. Fungsi
+
+Digunakan untuk memisahkan proses pembuatan soal dari program utama.
+
+string buatSoal(string negara)
+
+3. String
+
+Digunakan untuk menyimpan dan memanipulasi teks berupa nama negara.
+
+string jawabanBenar;
+
+string soal;
+
+4. 
