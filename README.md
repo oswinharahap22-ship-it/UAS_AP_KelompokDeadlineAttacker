@@ -135,7 +135,7 @@ Program ini menerapkan beberapa konsep dasar pemrograman C++, yaitu:
 
 Dengan adanya fitur-fitur tersebut, program dapat membantu pengguna dalam mengelola data inventaris toko secara sederhana dan terstruktur.
 
-https://drive.google.com/drive/folders/1deLJAcCkzs0undaKUz0zgof62uy3AbHy?usp=drive_link
+(https://drive.google.com/drive/folders/1deLJAcCkzs0undaKUz0zgof62uy3AbHy?usp=sharing)
 
 # Nomor 5 Game Tebak Negara
 Program ini merupakan sebuah game tebak negara yang dibuat menggunakan bahasa pemrograman C++. Tujuan permainan adalah menebak nama negara ASEAN yang ditampilkan dengan beberapa huruf yang telah disembunyikan menggunakan karakter garis bawah (_). Program memanfaatkan konsep dasar pemrograman seperti array, fungsi, string, percabangan, perulangan, dan pembangkitan bilangan acak.
