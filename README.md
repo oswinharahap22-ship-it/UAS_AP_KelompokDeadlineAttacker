@@ -154,6 +154,136 @@ Dengan adanya fitur-fitur tersebut, program dapat membantu pengguna dalam mengel
 
 (https://drive.google.com/drive/folders/1deLJAcCkzs0undaKUz0zgof62uy3AbHy?usp=sharing)
 
+# Nomor 4 Minesweeper++
+
+Program ini merupakan aplikasi berbasis Command Line Interface (CLI) yang dibuat menggunakan bahasa C++. Program merupakan implementasi permainan Minesweeper yang dimainkan pada papan berukuran N × N. Pemain harus menemukan seluruh bom dengan memberikan tanda pada posisi bom tanpa membuka kotak yang berisi bom.
+
+Program dibuat menggunakan satu class utama bernama `Minesweeper` yang bertugas mengelola seluruh data dan logika permainan. Seluruh data papan disimpan menggunakan array dua dimensi statis dengan ukuran maksimum 10 × 10 sesuai ketentuan tugas.
+
+## Struktur Data
+
+Program menggunakan tiga array dua dimensi untuk menyimpan data permainan:
+
+### board[10][10]
+
+Menyimpan kondisi asli papan permainan, yaitu:
+
+* `'*'` untuk bom.
+* `'0' - '8'` untuk jumlah bom di sekitar suatu kotak.
+
+### display[10][10]
+
+Menyimpan tampilan papan yang dilihat pemain.
+
+* `'#'` untuk kotak yang belum dibuka.
+* `'F'` untuk kotak yang ditandai sebagai bom.
+* Angka atau bom yang sudah terbuka.
+
+### flagged[10][10]
+
+Menyimpan status penandaan bom menggunakan nilai boolean (`true` atau `false`).
+
+Selain itu terdapat beberapa variabel penting:
+
+* `size` : ukuran papan permainan.
+* `bombCount` : jumlah bom pada permainan.
+* `startTime` : waktu mulai permainan.
+* `endTime` : waktu selesai permainan.
+* `gameOver` : status permainan sedang berlangsung atau telah berakhir.
+
+## Fitur Program
+
+### 1. Menu Utama
+
+Program memiliki menu utama yang memungkinkan pengguna untuk:
+
+1. Memulai permainan baru.
+2. Keluar dari program.
+
+Menu akan terus ditampilkan sampai pengguna memilih keluar.
+
+### 2. Papan Dinamis
+
+Sebelum permainan dimulai, pemain dapat menentukan:
+
+* Ukuran papan (4 × 4 sampai 10 × 10).
+* Jumlah bom yang akan digunakan.
+
+Program akan melakukan validasi agar input sesuai dengan batas yang ditentukan.
+
+### 3. Penempatan Bom Acak
+
+Bom ditempatkan secara acak menggunakan fungsi `rand()`. Posisi bom akan berbeda setiap kali permainan dimulai sehingga permainan menjadi lebih menantang.
+
+### 4. Perhitungan Angka Otomatis
+
+Setelah bom ditempatkan, program menghitung jumlah bom yang berada di delapan kotak sekitar setiap sel yang bukan bom.
+
+Angka yang ditampilkan memiliki arti:
+
+* 0 = tidak ada bom di sekitar.
+* 1–8 = jumlah bom di sekitar kotak tersebut.
+
+### 5. Membuka Kotak
+
+Pemain dapat membuka kotak dengan memasukkan koordinat baris dan kolom.
+
+Kemungkinan yang terjadi:
+
+* Jika kotak berisi bom, permainan berakhir.
+* Jika kotak berisi angka, angka akan ditampilkan.
+* Jika kotak bernilai 0, area kosong di sekitarnya akan terbuka secara otomatis.
+
+### 6. Flood Fill (Pembukaan Area Otomatis)
+
+Fitur ini digunakan ketika pemain membuka kotak yang bernilai 0.
+
+Program menggunakan metode rekursif untuk membuka seluruh area kosong yang saling terhubung hingga menemukan batas berupa angka yang lebih besar dari 0.
+
+### 7. Penandaan Bom (Flag)
+
+Pemain dapat memberikan tanda pada kotak yang dicurigai berisi bom menggunakan simbol `F`.
+
+Tanda dapat dipasang maupun dihapus kembali kapan saja selama permainan berlangsung.
+
+### 8. Penghitung Waktu
+
+Program mencatat waktu permainan menggunakan fungsi `time()`.
+
+Waktu dihitung sejak papan pertama kali ditampilkan hingga pemain menang atau kalah.
+
+### 9. Kondisi Menang
+
+Pemain dinyatakan menang apabila:
+
+* Semua bom berhasil ditandai dengan benar.
+* Tidak ada kotak aman yang diberi tanda bom.
+
+Program akan melakukan pengecekan kondisi kemenangan setiap kali pemain melakukan aksi.
+
+### 10. Menampilkan Semua Bom Saat Kalah
+
+Jika pemain membuka kotak yang berisi bom, program akan menampilkan seluruh lokasi bom pada papan sehingga pemain dapat melihat posisi semua bom yang ada.
+
+## Konsep Pemrograman yang Digunakan
+
+Program ini menerapkan beberapa konsep dasar pemrograman, yaitu:
+
+* Object Oriented Programming (OOP) menggunakan class `Minesweeper`.
+* Array dua dimensi untuk merepresentasikan papan permainan.
+* Rekursi pada fitur Flood Fill.
+* Percabangan (if-else) untuk logika permainan.
+* Perulangan (looping) untuk pengolahan papan.
+* Random Number Generation menggunakan `rand()`.
+* Validasi input pengguna.
+* Manipulasi waktu menggunakan `time()`.
+
+## Kesimpulan
+
+Minesweeper++ merupakan permainan berbasis console yang mengimplementasikan konsep OOP, array dua dimensi, rekursi, pengacakan data, serta manajemen waktu. Program memungkinkan pemain menentukan ukuran papan dan jumlah bom, membuka kotak, menandai bom, serta menyelesaikan permainan dengan menemukan seluruh bom secara tepat.
+
+
+
 # Nomor 5 Game Tebak Negara
 Program ini merupakan sebuah game tebak negara yang dibuat menggunakan bahasa pemrograman C++. Tujuan permainan adalah menebak nama negara ASEAN yang ditampilkan dengan beberapa huruf yang telah disembunyikan menggunakan karakter garis bawah (_). Program memanfaatkan konsep dasar pemrograman seperti array, fungsi, string, percabangan, perulangan, dan pembangkitan bilangan acak.
 
