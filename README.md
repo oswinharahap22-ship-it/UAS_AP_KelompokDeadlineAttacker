@@ -187,7 +187,6 @@ Digunakan untuk menyembunyikan huruf pada nama negara dan mengulangi permainan s
 
 -> while (jumlahDisembunyikan > 0)
 
-
 -> while (lagi == 'y' || lagi == 'Y')
 
 ### 6. Bilangan Acak
@@ -203,3 +202,6 @@ Digunakan untuk berinteraksi dengan pengguna.
 -> cin
 
 -> cout
+
+
+Screenshot: https://drive.google.com/file/d/1K4291uycbpo_Mn8f9r29NdeBzADepl34/view?usp=sharing
