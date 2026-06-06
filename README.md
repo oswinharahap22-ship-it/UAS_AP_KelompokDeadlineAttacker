@@ -9,7 +9,8 @@ Anggota:
 
 
 
-Nomor 3 Deskripsi Menu Utama dan Fungsi
+# Nomor 3 Deskripsi Menu Utama dan Fungsi
+
 Program ini merupakan aplikasi berbasis Command Line Interface (CLI) yang dibuat menggunakan bahasa C++. Program berfungsi untuk membantu pengelolaan inventaris barang pada sebuah toko. Data barang disimpan menggunakan struktur data `struct Barang` dan seluruh data barang dikelola dalam sebuah `vector`.
 
 ## Struktur Data
