@@ -70,6 +70,8 @@ updateLeaderboard: Menggunakan algoritma Bubble Sort. Setiap kali pemain menang 
 ## F. Fungsi Utama (main)
 Berisi alur besar (kontrol flow) permainan menggunakan perulangan do-while agar pemain bisa memilih "Bermain Lagi" setelah game over atau menang. Di sini juga terdapat logika cin untuk meminta input dan pemanggilan fungsi bersihkanLayar() agar tampilan CLI tidak menumpuk ke bawah (seperti aplikasi sungguhan).
 
+Screenshot: https://drive.google.com/drive/folders/1CqqzRKkiPGtWi6Bwm6FGD2oqcVEfaR1C?usp=sharing
+
 # Nomor 3 Deskripsi Menu Utama dan Fungsi
 
 Program ini merupakan aplikasi berbasis Command Line Interface (CLI) yang dibuat menggunakan bahasa C++. Program berfungsi untuk membantu pengelolaan inventaris barang pada sebuah toko. Data barang disimpan menggunakan struktur data `struct Barang` dan seluruh data barang dikelola dalam sebuah `vector`.
