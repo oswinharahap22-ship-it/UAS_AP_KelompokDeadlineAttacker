@@ -155,48 +155,51 @@ Setelah proses pengecekan selesai, program menampilkan skor yang telah diperoleh
 Di akhir eksekusi, program menampilkan pesan penutup "Game Selesai ;)" sebagai tanda bahwa permainan telah berakhir.
 
 ## Konsep Pemrograman yang Digunakan
-1. Array
+### 1. Array
 
 -> Digunakan untuk menyimpan kumpulan nama negara.
 
 string negaraASEAN[11]
 
-2. Fungsi
+### 2. Fungsi
 
 Digunakan untuk memisahkan proses pembuatan soal dari program utama.
 
 -> string buatSoal(string negara)
 
-3. String
+### 3. String
 
 Digunakan untuk menyimpan dan memanipulasi teks berupa nama negara.
 
 -> string jawabanBenar;
+
 -> string soal;
 
-4. Percabangan (If-Else)
+### 4. Percabangan (If-Else)
 
 Digunakan untuk menentukan apakah jawaban pengguna benar atau salah.
 
 -> if (jawaban == jawabanBenar)
 
-5. Perulangan (While)
+### 5. Perulangan (While)
 
 Digunakan untuk menyembunyikan huruf pada nama negara dan mengulangi permainan selama pengguna ingin bermain lagi.
 
 -> while (jumlahDisembunyikan > 0)
 
+
 -> while (lagi == 'y' || lagi == 'Y')
 
-6. Bilangan Acak
+### 6. Bilangan Acak
 
 Digunakan untuk memilih negara secara acak dan menentukan posisi huruf yang akan disembunyikan.
 
 -> rand()
 
-7. Input dan Output
+### 7. Input dan Output
 
 Digunakan untuk berinteraksi dengan pengguna.
 
 -> cin
+
 -> cout
