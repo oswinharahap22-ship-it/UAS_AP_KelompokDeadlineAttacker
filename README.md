@@ -12,6 +12,7 @@ Anggota:
 
 (-) Admaja janias Nadhif lahagu (251401090)
 
+# Nomor 1
 
 # Nomor 2 Deskripsi Menu Utama dan Fungsi
 
