@@ -31,19 +31,19 @@ Seluruh data barang disimpan dalam `vector<Barang>` sehingga jumlah data dapat b
 
 Fitur Program
 
-# 1. Tambah Barang
+## 1. Tambah Barang
 
 Fitur ini digunakan untuk memasukkan data barang baru ke dalam inventaris. Pengguna diminta mengisi kode barang, nama barang, harga, dan stok. Program melakukan validasi agar nilai harga dan stok tidak bernilai negatif. Jika pengguna memasukkan nilai yang tidak valid, program akan menampilkan pesan kesalahan dan meminta input ulang.
 
-# 2. Tampilkan Semua Barang
+## 2. Tampilkan Semua Barang
 
 Fitur ini menampilkan seluruh data barang yang tersimpan dalam inventaris. Informasi yang ditampilkan meliputi kode barang, nama barang, harga, dan stok masing-masing barang.
 
-# 3. Cari Barang Termahal
+## 3. Cari Barang Termahal
 
 Fitur ini digunakan untuk mencari barang dengan harga tertinggi. Program membandingkan harga seluruh barang yang ada dalam vector, kemudian menampilkan detail barang yang memiliki harga terbesar.
 
-# 4. Hitung Total Nilai Inventaris
+## 4. Hitung Total Nilai Inventaris
 
 Fitur ini menghitung total nilai aset yang tersimpan di gudang. Perhitungan dilakukan dengan mengalikan harga barang dengan stoknya, kemudian menjumlahkan seluruh hasil perkalian tersebut.
 
@@ -51,15 +51,15 @@ Rumus yang digunakan:
 
 Total Nilai Inventaris = Σ(harga × stok)
 
-# 5. Cek Restock
+## 5. Cek Restock
 
 Fitur ini menampilkan daftar barang yang memiliki stok kurang dari 5. Barang-barang tersebut dianggap memiliki stok kritis sehingga perlu segera dilakukan pemesanan ulang (restock).
 
-# 6. Update Stok Menggunakan Pointer
+## 6. Update Stok Menggunakan Pointer
 
 Fitur ini memungkinkan pengguna mengubah stok suatu barang berdasarkan kode barang. Program mencari barang yang sesuai dengan kode yang dimasukkan pengguna, kemudian menggunakan pointer yang menunjuk ke atribut stok untuk memperbarui nilainya. Penggunaan pointer pada fitur ini bertujuan untuk memenuhi konsep manipulasi data menggunakan alamat memori.
 
-# 7. Keluar
+## 7. Keluar
 
 Fitur ini digunakan untuk menghentikan program. Program akan terus menampilkan menu utama dalam sebuah perulangan hingga pengguna memilih menu keluar.
 
