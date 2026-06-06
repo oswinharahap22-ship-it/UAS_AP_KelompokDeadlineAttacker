@@ -12,7 +12,21 @@ Anggota:
 
 (-) Admaja janias Nadhif lahagu (251401090)
 
-# Nomor 1
+# Nomor 1 Parkir Mall
+
+Program ini adalah sebuah aplikasi berbasis CLI (command-line interface) yang ditulis menggunakan bahasa pemrograman C++. Aplikasi ini dirancang untuk mensimulasikan sistem manajemen dan transaksi di sebuah pintu portal parkir khusus mobil secara real-time.
+
+## Main Fitur
+Sistem Log-in Petugas: Pada awal program, aplikasi akan meminta input nama dan ID petugas yang sedang berjaga. Informasi ini akan terus ditampilkan sebagai header di bagian atas menu utama sebagai bentuk pertanggungjawaban operasional.
+Manajemen Kapasitas Dinamis: Program memiliki batas kapasitas parkir maksimal sebanyak 20 mobil. Sistem akan menolak input otomatis jika jumlah mobil yang dimasukkan melebihi kuota yang tersisa.
+Pencatatan Waktu Akurat (Real-Time): Menggunakan pustaka <ctime> untuk merekam waktu masuk kendaraan secara presisi berdasarkan jam internal komputer, bukan berdasarkan input manual.
+Penghitungan Durasi & Biaya Otomatis: Saat kendaraan keluar (melakukan pembayaran), sistem langsung menghitung selisih waktu dari awal masuk hingga detik berjalan. Tarif parkir ditetapkan sebesar Rp150 per menit, di mana kelebihan detik akan dibulatkan ke atas menjadi satu menit penuh.
+
+## Opsi In Main Menu
+Tambahkan Daftar Kendaraan: Digunakan untuk memasukkan data mobil baru (Nomor Plat, Merk, dan Warna Mobil) sekaligus mencatat waktu masuknya ke dalam sistem.
+Tampilkan Daftar Kendaraan: Menampilkan seluruh mobil yang saat ini sedang berada di dalam area parkir beserta durasi parkirnya yang terus berjalan (diwujudkan dalam satuan Jam, Menit, dan Detik).
+Pembayaran: Menampilkan daftar mobil aktif, meminta input plat nomor kendaraan yang ingin keluar, memproses hitungan biaya total secara otomatis, dan menghapus kendaraan tersebut dari sistem setelah pembayaran berhasil.
+Keluar Program: Menutup aplikasi dengan aman serta membersihkan alokasi memori komputer (memory deallocation) yang digunakan selama program berjalan.
 
 # Nomor 2 Deskripsi Menu Utama dan Fungsi
 
