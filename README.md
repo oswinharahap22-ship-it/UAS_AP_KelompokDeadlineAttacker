@@ -136,3 +136,20 @@ Program ini menerapkan beberapa konsep dasar pemrograman C++, yaitu:
 Dengan adanya fitur-fitur tersebut, program dapat membantu pengguna dalam mengelola data inventaris toko secara sederhana dan terstruktur.
 
 https://drive.google.com/drive/folders/1deLJAcCkzs0undaKUz0zgof62uy3AbHy?usp=drive_link
+
+# Nomor 5 Game Tebak Negara
+Program ini merupakan sebuah game tebak negara ASEAN berbasis Command Line Interface (CLI) yang dibuat menggunakan bahasa pemrograman C++. Tujuan permainan adalah menebak nama negara ASEAN yang ditampilkan dengan beberapa huruf yang telah disembunyikan menggunakan karakter garis bawah (_). Program memanfaatkan konsep dasar pemrograman seperti array, fungsi, string, percabangan, perulangan, dan pembangkitan bilangan acak.
+
+Saat program dijalankan, layar console terlebih dahulu dibersihkan menggunakan fungsi system("cls"). Kemudian program menginisialisasi generator bilangan acak melalui srand(time(0)) sehingga setiap kali program dijalankan, negara yang dipilih dan huruf yang disembunyikan akan berbeda.
+
+Program menyimpan daftar 11 negara ASEAN dalam sebuah array string bernama negaraASEAN, yaitu Indonesia, Malaysia, Singapore, Thailand, Vietnam, Laos, Myanmar, Cambodia, Brunei, Philippines, dan Timor Leste. Dari daftar tersebut, program akan memilih satu negara secara acak menggunakan fungsi rand().
+
+Setelah negara terpilih, program memanggil fungsi buatSoal(). Fungsi ini bertugas membuat soal dengan cara menyalin nama negara yang dipilih ke dalam variabel baru, kemudian mengganti tiga huruf pada posisi acak dengan karakter _. Proses ini dilakukan menggunakan perulangan while hingga tepat tiga huruf berhasil disembunyikan. Hasil akhirnya berupa petunjuk yang harus ditebak oleh pemain.
+
+Soal yang telah dibuat kemudian ditampilkan kepada pengguna. Program meminta pengguna memasukkan jawaban melalui keyboard menggunakan cin. Jawaban yang diberikan pengguna akan dibandingkan dengan jawaban yang sebenarnya menggunakan percabangan if-else.
+
+Jika jawaban pengguna sesuai dengan nama negara yang dipilih, program menampilkan pesan bahwa jawaban benar dan nilai skor akan bertambah satu. Sebaliknya, jika jawaban salah, program menampilkan pesan kesalahan sekaligus menunjukkan jawaban yang benar agar pengguna mengetahui hasil yang seharusnya.
+
+Setelah proses pengecekan selesai, program menampilkan skor yang telah diperoleh pengguna selama permainan berlangsung. Selanjutnya pengguna diberikan pilihan untuk bermain kembali dengan memasukkan karakter y atau Y. Jika pengguna memilih bermain lagi, program akan mengulangi seluruh proses mulai dari pemilihan negara secara acak hingga pengecekan jawaban. Jika pengguna memasukkan selain y atau Y , perulangan akan berhenti dan permainan berakhir.
+
+Di akhir eksekusi, program menampilkan pesan penutup "Game Selesai ;)" sebagai tanda bahwa permainan telah berakhir.
