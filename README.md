@@ -290,7 +290,7 @@ Program ini merupakan sebuah game tebak negara yang dibuat menggunakan bahasa pe
 
 Saat program dijalankan, layar console terlebih dahulu dibersihkan menggunakan fungsi system("cls"). Kemudian program menginisialisasi generator bilangan acak melalui srand(time(0)) sehingga setiap kali program dijalankan, negara yang dipilih dan huruf yang disembunyikan akan berbeda.
 
-Program menyimpan daftar 11 negara ASEAN dalam sebuah array string bernama negaraASEAN, yaitu Indonesia, Malaysia, Singapore, Thailand, Vietnam, Laos, Myanmar, Cambodia, Brunei, Philippines, dan Timor Leste. Dari daftar tersebut, program akan memilih satu negara secara acak menggunakan fungsi rand().
+Program menyimpan daftar 11 negara dalam sebuah array string bernama negaraASEAN, yaitu Indonesia, Malaysia, Singapore, Thailand, Vietnam, Laos, Myanmar, Cambodia, Brunei, Philippines, dan Timor Leste. Dari daftar tersebut, program akan memilih satu negara secara acak menggunakan fungsi rand().
 
 Setelah negara terpilih, program memanggil fungsi buatSoal(). Fungsi ini bertugas membuat soal dengan cara menyalin nama negara yang dipilih ke dalam variabel baru, kemudian mengganti tiga huruf pada posisi acak dengan karakter _. Proses ini dilakukan menggunakan perulangan while hingga tepat tiga huruf berhasil disembunyikan. Hasil akhirnya berupa petunjuk yang harus ditebak oleh pemain.
 
@@ -353,3 +353,6 @@ Digunakan untuk berinteraksi dengan pengguna.
 
 
 Screenshot: https://drive.google.com/file/d/1K4291uycbpo_Mn8f9r29NdeBzADepl34/view?usp=sharing
+
+
+Link Youtube ada didalam ini: https://drive.google.com/drive/folders/1pcm6UOhaAvGZxGe1crccV2a2O4vqw8Wd?usp=sharing
