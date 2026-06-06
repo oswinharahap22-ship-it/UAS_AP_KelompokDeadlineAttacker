@@ -281,6 +281,7 @@ Program ini menerapkan beberapa konsep dasar pemrograman, yaitu:
 ## Kesimpulan
 
 Minesweeper++ merupakan permainan berbasis console yang mengimplementasikan konsep OOP, array dua dimensi, rekursi, pengacakan data, serta manajemen waktu. Program memungkinkan pemain menentukan ukuran papan dan jumlah bom, membuka kotak, menandai bom, serta menyelesaikan permainan dengan menemukan seluruh bom secara tepat.
+Screenshot : https://drive.google.com/drive/folders/1y68tz37nGp5BuyWryqHDCLDa13Xhi7lm?usp=sharing
 
 
 
