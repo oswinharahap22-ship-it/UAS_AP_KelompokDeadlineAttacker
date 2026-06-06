@@ -38,6 +38,37 @@ Mengurutkan skor tertinggi pemain untuk fitur Leaderboard.
 ## Modularitas:
 Memisahkan fungsi-fungsi spesifik agar main program (program utama) tetap bersih dan mudah dibaca.
 
+Penjelasan Tiap Komponen Kode:
+
+## A. Library dan Bank kata
+#include <cstdlib> dan <ctime>: Digunakan untuk memanggil fungsi rand() dan srand(time(0)). Tujuannya agar sistem bisa mengacak kata secara dinamis setiap kali program dijalankan (tidak memunculkan kata yang sama terus-menerus).
+
+BANK_KATA: Sebuah array konstanta (tidak bisa diubah) berisi 15 kata terkait dunia IT dan kampus yang akan dipilih secara acak oleh komputer.
+
+## B. Struktur Data
+struct KataGame: Ini adalah cetak biru untuk menyimpan status permainan saat itu. Berisi kata yang sedang ditebak (kataAsli), tampilan garis bawah (statusTebakan), sisa nyawa (sisaNyawa), dan daftar huruf salah (tebakanSalah).
+
+struct PlayerScore: Digunakan khusus untuk menyimpan nama dan skor pemain di akhir game untuk keperluan Leaderboard.
+
+## C. Fungsi Inisialilasi 
+Fungsi ini dipanggil di awal permainan. Fungsi ini menerima parameter berupa Pointer (KataGame* game).
+
+Logika: Fungsi ini mengambil satu kata acak dari BANK_KATA, mengubah statusTebakan menjadi garis bawah (_ _ _), dan mengatur jumlah nyawa berdasarkan tingkat kesulitan yang dipilih pemain (Easy=8, Medium=6, Hard=4).
+
+## D. Fungsi Logika Utama
+Ini adalah "otak" dari permainan. Menerima input huruf dari pemain dan mengeceknya.
+
+Validasi: Program akan mengecek dulu apakah huruf tersebut sudah pernah ditebak sebelumnya (baik tebakan benar maupun salah). Jika sudah, program akan memberikan peringatan dan tidak memotong nyawa.
+
+Pengecekan (Pencarian): Program melakukan looping (perulangan) ke setiap huruf pada kataAsli. Jika huruf tebakan cocok, maka status _ akan diganti dengan huruf tersebut. Jika setelah looping tidak ada huruf yang cocok, nyawa dikurangi 1 dan huruf tersebut dimasukkan ke array tebakanSalah.
+
+## E. Fitur tambahan: Hint
+gunakanHint: Mencari karakter _ pertama yang belum tertebak, lalu otomatis membukanya dengan mengorbankan 1 nyawa.
+
+updateLeaderboard: Menggunakan algoritma Bubble Sort. Setiap kali pemain menang dan mendapat skor, data akan dimasukkan ke dalam Array of Struct leaderboard. Algoritma kemudian akan membandingkan dan menukar posisi data agar skor tertinggi selalu berada di urutan teratas (indeks 0).
+
+## F. Fungsi Utama
+Berisi alur besar (kontrol flow) permainan menggunakan perulangan do-while agar pemain bisa memilih "Bermain Lagi" setelah game over atau menang. Di sini juga terdapat logika cin untuk meminta input dan pemanggilan fungsi bersihkanLayar() agar tampilan CLI tidak menumpuk ke bawah (seperti aplikasi sungguhan).
 
 # Nomor 3 Deskripsi Menu Utama dan Fungsi
 
