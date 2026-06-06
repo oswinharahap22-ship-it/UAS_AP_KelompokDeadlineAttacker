@@ -28,6 +28,8 @@ Tampilkan Daftar Kendaraan: Menampilkan seluruh mobil yang saat ini sedang berad
 Pembayaran: Menampilkan daftar mobil aktif, meminta input plat nomor kendaraan yang ingin keluar, memproses hitungan biaya total secara otomatis, dan menghapus kendaraan tersebut dari sistem setelah pembayaran berhasil.
 Keluar Program: Menutup aplikasi dengan aman serta membersihkan alokasi memori komputer (memory deallocation) yang digunakan selama program berjalan.
 
+(https://drive.google.com/drive/folders/1-6CXYnx7QkzMk2HeuCVhFTXfE-RkLPkO?usp=sharing)
+
 # Nomor 2 Deskripsi Menu Utama dan Fungsi
 
 Proyek ini adalah aplikasi Game Tebak Kata berbasis Command Line Interface (CLI) menggunakan bahasa pemrograman C++. Konsep permainannya mirip dengan "Hangman", di mana pemain harus menebak sebuah kata rahasia huruf demi huruf sebelum "nyawa" (kesempatan menebak) mereka habis. Jika tebakan benar, huruf akan terbuka pada posisi yang sesuai. Jika salah, nyawa berkurang dan huruf tersebut dicatat agar pemain tahu huruf apa saja yang sudah ditebak.
