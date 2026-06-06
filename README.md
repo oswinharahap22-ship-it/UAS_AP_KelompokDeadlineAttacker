@@ -138,7 +138,7 @@ Dengan adanya fitur-fitur tersebut, program dapat membantu pengguna dalam mengel
 https://drive.google.com/drive/folders/1deLJAcCkzs0undaKUz0zgof62uy3AbHy?usp=drive_link
 
 # Nomor 5 Game Tebak Negara
-Program ini merupakan sebuah game tebak negara ASEAN berbasis Command Line Interface (CLI) yang dibuat menggunakan bahasa pemrograman C++. Tujuan permainan adalah menebak nama negara ASEAN yang ditampilkan dengan beberapa huruf yang telah disembunyikan menggunakan karakter garis bawah (_). Program memanfaatkan konsep dasar pemrograman seperti array, fungsi, string, percabangan, perulangan, dan pembangkitan bilangan acak.
+Program ini merupakan sebuah game tebak negara yang dibuat menggunakan bahasa pemrograman C++. Tujuan permainan adalah menebak nama negara ASEAN yang ditampilkan dengan beberapa huruf yang telah disembunyikan menggunakan karakter garis bawah (_). Program memanfaatkan konsep dasar pemrograman seperti array, fungsi, string, percabangan, perulangan, dan pembangkitan bilangan acak.
 
 Saat program dijalankan, layar console terlebih dahulu dibersihkan menggunakan fungsi system("cls"). Kemudian program menginisialisasi generator bilangan acak melalui srand(time(0)) sehingga setiap kali program dijalankan, negara yang dipilih dan huruf yang disembunyikan akan berbeda.
 
@@ -153,3 +153,8 @@ Jika jawaban pengguna sesuai dengan nama negara yang dipilih, program menampilka
 Setelah proses pengecekan selesai, program menampilkan skor yang telah diperoleh pengguna selama permainan berlangsung. Selanjutnya pengguna diberikan pilihan untuk bermain kembali dengan memasukkan karakter y atau Y. Jika pengguna memilih bermain lagi, program akan mengulangi seluruh proses mulai dari pemilihan negara secara acak hingga pengecekan jawaban. Jika pengguna memasukkan selain y atau Y , perulangan akan berhenti dan permainan berakhir.
 
 Di akhir eksekusi, program menampilkan pesan penutup "Game Selesai ;)" sebagai tanda bahwa permainan telah berakhir.
+
+## Konsep Pemrograman yang Digunakan
+1. Array
+Digunakan untuk menyimpan kumpulan nama negara.
+string negaraASEAN[11]
